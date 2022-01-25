@@ -364,6 +364,11 @@ impl NetworkResource {
         self.naia.as_mut()
 
     }
+
+    /// Returns a reference to the naia NetworkResource, if it exists
+    pub fn as_naia(&self) -> Option<&NaiaNetworkResource> {
+        self.naia.as_ref()
+    }
 }
 
 /// A plugin for setting up the NetworkResource
